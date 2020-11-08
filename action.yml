@@ -21,11 +21,11 @@ inputs:
     description: 'Other arguments to Application AppInspector'
     required: false
     default: ''
-
-outputs:
+  
 branding:
   icon: 'check-square'  
   color: 'green'  
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
