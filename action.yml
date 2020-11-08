@@ -4,8 +4,7 @@ description: 'Run ApplicationInspector Static Analysis'
 inputs:
   location-to-scan:
     description: 'The path relative to repository root to scan.'
-    required: false
-    default: ${{GITHUB_WORKSPACE}}
+    required: true
     
 runs:
   using: 'docker'
