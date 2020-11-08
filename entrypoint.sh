@@ -1,3 +1,3 @@
-/tools/appinspector analyze -c high -s "$GITHUB_WORKSPACE/" -f json -o ApplicationInspector.json
-
+ScanTarget=$GITHUB_WORKSPACE
+/tools/appinspector analyze -c high -s "$ScanTarget" -f json -o ApplicationInspector.json
 cat ApplicationInspector.json
