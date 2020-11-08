@@ -1,5 +1,12 @@
 name: 'inspektre code intel'
 description: 'Run ApplicationInspector Static Analysis'
+
+inputs:
+  location-to-scan:
+    description: 'The path relative to repository root to scan.'
+    required: false
+    default: 'GITHUB_WORKSPACE'
+    
 runs:
   using: 'docker'
   image: 'Dockerfile'
