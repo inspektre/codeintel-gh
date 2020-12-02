@@ -4,7 +4,7 @@ inputs:
   location-to-scan:
     description: 'The path relative to repository root to scan.'
     required: false
-    default: 'GITHUB_WORKSPACE'
+    default:  $GITHUB_WORKSPACE
   output-path:
     description: 'The path relative to file root to output to.'
     required: false
