@@ -30,5 +30,5 @@
 #     done
 #     IgnoreArg = "-k ${IgnoreArg:1}"
 # fi
-
-/tools/appinspector analyze -s "$GITHUB_WORKSPACE" -o "$OutputPath" -f $3 $IgnoreArg $5
+cd $GITHUB_WORKSPACE
+/tools/appinspector analyze -s . -o "$OutputPath" -f $3 $IgnoreArg $5
