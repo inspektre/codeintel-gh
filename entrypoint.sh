@@ -26,5 +26,7 @@ ScanTarget=$GITHUB_WORKSPACE
 OutputPath=$GITHUB_WORKSPACE/AppInspectorResults.json
 
 cd $GITHUB_WORKSPACE
+pwd
+ls -al $GITHUB_WORKSPACE
 
 /tools/appinspector analyze -s $ScanTarget -o $OutputPath -f $3 $IgnoreArg $5
