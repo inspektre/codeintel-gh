@@ -11,10 +11,10 @@ if [ ${3,,} = "html" ]; then
     exit -1
 fi
 
-if [ "$1" = "GITHUB_WORKSPACE" ]; then
-    ScanTarget=$GITHUB_WORKSPACE
-else
-    ScanTarget=$GITHUB_WORKSPACE/$1
+# if [ "$1" = "GITHUB_WORKSPACE" ]; then
+ScanTarget=$GITHUB_WORKSPACE
+# else
+#     ScanTarget=$GITHUB_WORKSPACE/$1
 fi
 
 if [ "$2" = "AppInspectorResults" ]; then
