@@ -31,4 +31,4 @@ if [ "$4" != "," ]; then
     IgnoreArg = "-k ${IgnoreArg:1}"
 fi
 
-/tools/appinspector analyze -s $GITHUB_WORKSPACE -o "$OutputPath" -f $3 $IgnoreArg $5
+/tools/appinspector analyze -s "$ScanTarget" -o "$OutputPath" -f $3 $IgnoreArg $5
